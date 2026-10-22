@@ -100,6 +100,87 @@
       *,*::before,*::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
       .project-card:hover { transform: none; }
     }
+  
+    /* Contact section layout fix: wrap long copy and keep action labels visible at every scroll position. */
+    #contact .contact-intro {
+      display: block !important;
+      width: calc(100% - 24px) !important;
+      max-width: 880px !important;
+      margin: 0 auto 1.5rem !important;
+      padding: 0 !important;
+      text-align: center !important;
+      white-space: normal !important;
+      overflow-wrap: anywhere !important;
+      word-break: normal !important;
+      line-height: 1.5 !important;
+      text-wrap: wrap !important;
+    }
+    #contact .contact-actions {
+      display: flex !important;
+      width: 100% !important;
+      max-width: 920px !important;
+      margin: 0 auto !important;
+      padding: 0 12px !important;
+      box-sizing: border-box !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 14px !important;
+    }
+    #contact .contact-action,
+    #contact .contact-action:link,
+    #contact .contact-action:visited {
+      box-sizing: border-box !important;
+      display: inline-flex !important;
+      flex: 0 1 auto !important;
+      align-items: center !important;
+      justify-content: center !important;
+      min-width: 142px !important;
+      min-height: 54px !important;
+      padding: 13px 18px !important;
+      border: 2px solid #fff !important;
+      border-radius: 14px !important;
+      background: transparent !important;
+      color: #fff !important;
+      font-family: "Lato", sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      line-height: 1.35 !important;
+      text-align: center !important;
+      text-decoration: none !important;
+      text-indent: 0 !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      white-space: normal !important;
+      overflow-wrap: anywhere !important;
+      overflow: visible !important;
+    }
+    #contact .contact-action span {
+      display: inline !important;
+      color: #fff !important;
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      line-height: 1.35 !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    #contact .contact-action:hover,
+    #contact .contact-action:focus-visible {
+      color: #2c3e50 !important;
+      background: #fff !important;
+      border-color: #fff !important;
+      outline-offset: 3px;
+    }
+    #contact .contact-action:hover span,
+    #contact .contact-action:focus-visible span {
+      color: #2c3e50 !important;
+    }
+    @media (max-width: 575.98px) {
+      #contact .contact-intro { width: calc(100% - 12px) !important; font-size: 1.05rem !important; }
+      #contact .contact-actions { padding: 0 4px !important; gap: 10px !important; }
+      #contact .contact-action { flex: 1 1 calc(50% - 10px) !important; min-width: 0 !important; padding: 12px 10px !important; }
+    }
+
   </style>
 </head>
 <body id="page-top">
@@ -310,13 +391,18 @@
   <section class="page-section bg-primary text-white mb-0" id="contact">
     <div class="container text-center">
       <h2 class="page-section-heading text-center text-uppercase text-white">Get In Touch</h2>
-      <div class="divider-custom divider-light"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div><div class="divider-custom-line"></div></div>
-      <p class="lead mb-4">I'm open to entry-level software engineering opportunities and conversations about building useful software.</p>
-      <div class="d-flex justify-content-center flex-wrap gap-3 contact-details">
-        <a class="btn btn-outline-light btn-lg" href="mailto:pranith.kumar0110@gmail.com"><i class="fas fa-envelope me-2" aria-hidden="true"></i>Email Me</a>
-        <a class="btn btn-outline-light btn-lg" href="https://linkedin.com/in/pranith-kumar-golimela" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin me-2" aria-hidden="true"></i>LinkedIn</a>
-        <a class="btn btn-outline-light btn-lg" href="https://github.com/pranith-kumar7" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-2" aria-hidden="true"></i>GitHub</a>
-        <a class="btn btn-outline-light btn-lg" href="tel:+918247260575"><i class="fas fa-phone me-2" aria-hidden="true"></i>Call</a>
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <p class="lead contact-intro">I'm open to entry-level software engineering opportunities and conversations about building useful software.</p>
+      <div class="contact-actions">
+        <a class="contact-action" href="mailto:pranith.kumar0110@gmail.com"><span>Email Me</span></a>
+        <a class="contact-action" href="https://linkedin.com/in/pranith-kumar-golimela" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a>
+        <a class="contact-action" href="https://github.com/pranith-kumar7" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a>
+        <a class="contact-action" href="tel:+918247260575"><span>Call</span></a>
+        <a class="contact-action" href="https://drive.google.com/file/d/1K34rmunWzDYh1jcSVB_L8Fq-7C-iI-Ig/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span>View Resume</span></a>
       </div>
       <p class="mt-4 mb-0">Hyderabad, India</p>
     </div>
