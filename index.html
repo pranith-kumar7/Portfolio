@@ -55,7 +55,36 @@
     .education-panel .result { color: #168f78; font-weight: 700; margin-bottom: 0; }
     .credential-panel .fa-solid, .credential-panel .fa-brands { color: #1abc9c; margin-bottom: .9rem; font-size: 1.5rem; }
     .about-copy { line-height: 1.85; }
-    .contact-details a { color: #1abc9c; text-decoration: none; overflow-wrap: anywhere; }
+    /* Contact section fixes: constrain copy to the viewport and keep button labels readable. */
+    #contact .lead {
+      width: 100%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+      text-wrap: pretty;
+    }
+    #contact .contact-details {
+      width: 100%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+    }
+    #contact .contact-details a.btn {
+      color: #fff;
+      white-space: normal;
+      text-align: center;
+      line-height: 1.35;
+    }
+    #contact .contact-details a.btn:hover,
+    #contact .contact-details a.btn:focus-visible {
+      color: #2c3e50;
+      background-color: #fff;
+      border-color: #fff;
+    }
+    .contact-details a { text-decoration: none; overflow-wrap: anywhere; }
     .contact-details a:hover { text-decoration: underline; }
     .social-button { display: inline-flex; align-items: center; justify-content: center; width: 3.25rem; height: 3.25rem; border: 2px solid #fff; border-radius: 50%; color: #fff; margin: 0 .35rem; text-decoration: none; transition: background .2s,color .2s; }
     .social-button:hover { color: #2c3e50; background: #fff; }
