@@ -1,186 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="Portfolio of Pranith Kumar Golimela, a Computer Science graduate building full-stack web applications and AI-powered tools." />
-<meta name="author" content="Pranith Kumar Golimela" />
-<title>Pranith Kumar Golimela | Software Engineer</title>
-<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-<link href="https://cdn.jsdelivr.net/gh/StartBootstrap/startbootstrap-resume@master/dist/css/styles.css" rel="stylesheet" />
-<style>
-:root{--bs-primary:#176b5b;--bs-primary-rgb:23,107,91}
-body{font-family:Muli,Arial,sans-serif;color:#4b5563}
-h1,h2,h3,h4,h5,h6,.subheading{font-family:"Saira Extra Condensed",Arial,sans-serif}
-#sideNav .navbar-brand .img-profile{width:10rem;height:10rem;object-fit:cover;object-position:center 27%;border:8px solid rgba(255,255,255,.2)}
-.resume-section{padding-top:5rem;padding-bottom:5rem;max-width:75rem}
-.resume-section-content{width:100%}
-h2{font-weight:700}
-.section-lead{max-width:780px;line-height:1.8}
-.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
-.project-card{height:100%;padding:1.3rem 1.35rem;border:1px solid #dfe5e8;border-left:4px solid #176b5b;border-radius:.35rem;background:#fff;box-shadow:0 3px 14px rgba(25,45,60,.045)}
-.project-card h3{font-family:Muli,Arial,sans-serif;font-weight:800;font-size:1.12rem;line-height:1.4;color:#263b4a;margin-bottom:.45rem}
-.project-card p{font-size:.93rem;line-height:1.65;margin-bottom:.75rem}
-.project-card ul{padding-left:1.15rem;font-size:.9rem;line-height:1.55;margin-bottom:.85rem}
-.project-card li{margin-bottom:.25rem}
-.project-stack{font-size:.79rem;line-height:1.7;color:#176b5b;font-weight:800;margin-bottom:.8rem}
-.project-links{display:flex;flex-wrap:wrap;gap:.8rem}
-.project-links a{font-size:.85rem;font-weight:800;text-decoration:none}
-.project-links a:hover{text-decoration:underline}
-.skill-block{padding:1.1rem 1.2rem;margin-bottom:.75rem;border:1px solid #e1e6ea;border-radius:.3rem}
-.skill-block strong{display:block;color:#243949;margin-bottom:.35rem}
-.skill-block p{margin:0;line-height:1.7}
-.education-item{padding:0 0 1.4rem 0;margin-bottom:1.4rem;border-bottom:1px solid #dee2e6}
-.education-item:last-child{border-bottom:0;margin-bottom:0}
-.education-item h3{font-family:Muli,Arial,sans-serif;font-weight:800;font-size:1.1rem}
-.education-meta{color:#176b5b;font-weight:800}
-.cert-list li{margin-bottom:.75rem;line-height:1.65}
-#contact a{overflow-wrap:anywhere}
-@media(max-width:991.98px){.project-grid{grid-template-columns:1fr}.resume-section{min-height:auto;padding-top:4.5rem;padding-bottom:4.5rem}#sideNav .navbar-brand .img-profile{display:none}}
-@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Pranith Kumar Golimela's software engineering portfolio featuring full-stack applications, AI projects, skills, and education." />
+  <meta name="author" content="Pranith Kumar Golimela" />
+  <meta name="theme-color" content="#2c3e50" />
+  <title>Pranith Kumar Golimela | Software Engineering Portfolio</title>
+  <!-- Based on Start Bootstrap Freelancer v7.0.7 (MIT License).
+       https://github.com/StartBootstrap/startbootstrap-freelancer -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/gh/StartBootstrap/startbootstrap-freelancer@master/dist/css/styles.css" rel="stylesheet" />
+  <style>
+    :root { --bs-primary: #1abc9c; --bs-secondary: #2c3e50; }
+    body { font-family: "Lato", sans-serif; }
+    h1,h2,h3,h4,h5,h6,.navbar-brand { font-family: "Montserrat", sans-serif; }
+    .masthead { padding-top: calc(6rem + 74px); padding-bottom: 6rem; }
+    .profile-photo {
+      width: 145px; height: 145px; object-fit: cover; object-position: center 25%;
+      border-radius: 50%; border: 8px solid rgba(255,255,255,.22);
+      margin-bottom: 2rem; box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    }
+    .masthead-heading { max-width: 950px; }
+    .masthead-subheading { max-width: 760px; line-height: 1.65; }
+    .divider-custom { margin: 1.35rem 0 2rem; }
+    .section-note { max-width: 760px; margin: -1rem auto 2.5rem; color: #6c757d; text-align: center; }
+    .project-card {
+      height: 100%; background: #fff; border-radius: .5rem; border: 1px solid #e3e8ed;
+      overflow: hidden; box-shadow: 0 3px 12px rgba(44,62,80,.06); transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .project-card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(44,62,80,.12); }
+    .project-icon { min-height: 135px; display: flex; align-items: center; justify-content: center; background: #e8f8f5; color: #168f78; font-size: 3rem; }
+    .project-card:nth-child(2) .project-icon { background: #edf3fb; color: #2c3e50; }
+    .project-card:nth-child(3) .project-icon { background: #f0edfb; color: #6554a4; }
+    .project-content { padding: 1.5rem; display: flex; flex-direction: column; height: calc(100% - 135px); }
+    .project-content h3 { font-size: 1.15rem; line-height: 1.4; margin-bottom: .75rem; color: #2c3e50; }
+    .project-content p { color: #626d78; font-size: .98rem; }
+    .project-content ul { padding-left: 1.1rem; color: #626d78; font-size: .92rem; margin-bottom: 1.1rem; }
+    .project-content li { margin-bottom: .45rem; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; margin-bottom: 1.15rem; }
+    .tech-tag { background: #f1f4f7; color: #425466; border-radius: 4px; padding: .25rem .5rem; font-size: .78rem; }
+    .project-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .project-actions a { font-weight: 700; text-decoration: none; color: #168f78; font-size: .9rem; }
+    .project-actions a:hover { color: #11715f; text-decoration: underline; }
+    .skill-panel, .education-panel, .credential-panel {
+      height: 100%; background: #fff; border: 1px solid #e5e9ed; border-radius: .5rem; padding: 1.4rem;
+    }
+    .skill-panel h3 { font-size: 1rem; color: #2c3e50; margin-bottom: .85rem; }
+    .skill-panel p { color: #66717d; margin: 0; line-height: 1.9; }
+    .education-panel h3, .credential-panel h3 { font-size: 1.05rem; line-height: 1.45; color: #2c3e50; }
+    .education-panel .subline, .credential-panel .subline { color: #66717d; margin-top: .55rem; margin-bottom: .5rem; }
+    .education-panel .result { color: #168f78; font-weight: 700; margin-bottom: 0; }
+    .credential-panel .fa-solid, .credential-panel .fa-brands { color: #1abc9c; margin-bottom: .9rem; font-size: 1.5rem; }
+    .about-copy { line-height: 1.85; }
+    .contact-details a { color: #1abc9c; text-decoration: none; overflow-wrap: anywhere; }
+    .contact-details a:hover { text-decoration: underline; }
+    .social-button { display: inline-flex; align-items: center; justify-content: center; width: 3.25rem; height: 3.25rem; border: 2px solid #fff; border-radius: 50%; color: #fff; margin: 0 .35rem; text-decoration: none; transition: background .2s,color .2s; }
+    .social-button:hover { color: #2c3e50; background: #fff; }
+    @media (max-width: 767px) {
+      .profile-photo { width: 118px; height: 118px; margin-bottom: 1.5rem; }
+      .masthead { padding-top: calc(5rem + 74px); padding-bottom: 4rem; }
+      .masthead-heading { font-size: 2.15rem; line-height: 1.25; }
+      .profile-initials { width: 118px; height: 118px; font-size: 35px; margin-bottom: 1.5rem; }
+      .project-content { height: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html:focus-within { scroll-behavior: auto; }
+      *,*::before,*::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .project-card:hover { transform: none; }
+    }
+  </style>
 </head>
 <body id="page-top">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-<a class="navbar-brand js-scroll-trigger" href="#page-top">
-<span class="d-block d-lg-none">Pranith Kumar Golimela</span>
-<span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/profile.jpg" alt="Portrait of Pranith Kumar Golimela" /></span>
-</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav">
-<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#credentials">Certifications</a></li>
-<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#achievements">Achievements</a></li>
-<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-</ul></div>
-</nav>
+  <!-- Navigation: Start Bootstrap Freelancer template -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Pranith Kumar</a>
+      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars ms-1" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#education">Education</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="container-fluid p-0">
-<section class="resume-section" id="about"><div class="resume-section-content">
-<h1 class="mb-0">Pranith Kumar <span class="text-primary">Golimela</span></h1>
-<div class="subheading mb-4">Hyderabad, India · <a href="tel:+918247260575">+91 82472 60575</a> · <a href="mailto:pranith.kumar0110@gmail.com">pranith.kumar0110@gmail.com</a></div>
-<p class="lead section-lead mb-4">Computer Science and Engineering (Data Science) graduate focused on software engineering, backend development, full-stack web applications, and AI integration. I build applications using JavaScript, React, Node.js, Express, Python, Flask, and databases, and enjoy solving practical problems across the full development workflow.</p>
-<p class="mb-4">My project experience includes AI-assisted job-search tools, campus lost-and-found workflows, a custom SQL database engine, a blog platform, deepfake detection, and chest X-ray image analysis. I am looking for an entry-level software engineering opportunity where I can contribute, learn from teammates, and build reliable software.</p>
-<div class="social-icons mb-4">
-<a class="social-icon" href="https://linkedin.com/in/pranith-kumar-golimela" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-<a class="social-icon" href="https://github.com/pranith-kumar7" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-<a class="social-icon" href="mailto:pranith.kumar0110@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-</div>
-<a class="btn btn-primary btn-lg me-2 mb-2" href="https://drive.google.com/file/d/17x89yt2yZu5zBqNpWoui4wVNG4kfQHcn/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf me-2"></i>View Resume</a>
-<a class="btn btn-outline-primary btn-lg mb-2" href="#projects">Explore Projects</a>
-<div class="mt-4 text-secondary"><strong>CGPA:</strong> 8.58/10 <span class="mx-2">·</span><strong>TCS CodeVita Season 13:</strong> Global Rank 5714</div>
-</div></section>
-<hr class="m-0"/>
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+      <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Pranith Kumar Golimela" />
+      <h1 class="masthead-heading text-uppercase mb-0">Pranith Kumar Golimela</h1>
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div><div class="divider-custom-line"></div>
+      </div>
+      <p class="masthead-subheading font-weight-light mb-4">Computer Science Graduate · Software Engineering · Full-Stack &amp; AI Applications</p>
+      <p class="lead mb-4" style="max-width:780px">I build practical web applications by connecting clean user interfaces with backend APIs, databases, and AI model workflows. I enjoy debugging problems across the stack and learning how reliable software is designed.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a class="btn btn-outline-light btn-lg" href="#projects"><i class="fas fa-code me-2" aria-hidden="true"></i>View Projects</a>
+        <a class="btn btn-outline-light btn-lg" href="https://drive.google.com/file/d/17x89yt2yZu5zBqNpWoui4wVNG4kfQHcn/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf me-2" aria-hidden="true"></i>Resume</a>
+      </div>
+      <p class="mt-4 mb-0">Hyderabad, India <span class="mx-2">·</span> B.Tech CGPA: 8.58/10</p>
+    </div>
+  </header>
 
-<section class="resume-section" id="projects"><div class="resume-section-content">
-<h2 class="mb-2">Projects</h2>
-<p class="section-lead mb-4">Selected software and AI projects. Each project includes its repository, a summary of the implementation, and the main technologies used.</p>
-<div class="project-grid">
-<article class="project-card">
-<h3>AI Job Tracker — Job Application Management Platform</h3>
-<p>Full-stack job-search tracker with application workflow management and AI-assisted career tools.</p>
-<ul><li>Built authenticated application management with CRUD operations, Kanban status updates, search, filtering, reminders, and CSV export.</li><li>Integrated OpenAI features for job-description parsing, resume suggestions, job matching, cover letters, and interview preparation.</li></ul>
-<div class="project-stack">JavaScript · React · Node.js · Express · MongoDB · React Query · OpenAI API · JWT · Zod</div>
-<div class="project-links"><a href="https://github.com/pranith-kumar7/Ai-Job-Tracker" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://ai-job-tracker-smoky.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-</article>
-<article class="project-card">
-<h3>Campus Connect — Campus Lost &amp; Found</h3>
-<p>Full-stack campus platform for reporting lost or found items, submitting claims, and supporting recovery workflows.</p>
-<ul><li>Implemented user and admin flows with protected routes and database-backed item and claim records.</li><li>Built REST API integrations and image upload workflows, including item photos and verification uploads.</li></ul>
-<div class="project-stack">JavaScript · React · Node.js · Express · MongoDB · JWT · Axios · Multer</div>
-<div class="project-links"><a href="https://github.com/pranith-kumar7/campus-lost-found" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-</article>
-<article class="project-card">
-<h3>PulmoScan — AI Chest X-Ray Decision Support</h3>
-<p>Web application that connects chest X-ray submissions to deep-learning inference and displays model-generated predictions.</p>
-<ul><li>Used DenseNet121 with TensorFlow/Keras for pulmonary image classification and OpenCV for image processing.</li><li>Connected React user flows with Flask APIs, model inference, MongoDB Atlas, and AI-assisted advice workflows.</li></ul>
-<div class="project-stack">Python · Flask · React · TensorFlow/Keras · DenseNet121 · OpenCV · MongoDB Atlas · REST APIs · OpenRouter API</div>
-<div class="project-links"><a href="https://github.com/pranith-kumar7/pulomonary-AI-care-system" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://pulomonary-ai-care-system.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-</article>
-<article class="project-card">
-<h3>BlogApp — Full-Stack Blogging Platform</h3>
-<p>Role-based blogging application where readers browse and comment on articles while authors manage their own posts.</p>
-<ul><li>Implemented signup/login, JWT-protected author actions, article publishing, editing, soft deletion, and restoration.</li><li>Structured Express routes for user, author, and admin workflows with MongoDB persistence for users, posts, and comments.</li></ul>
-<div class="project-stack">JavaScript · React · Redux Toolkit · React Router · Bootstrap · Node.js · Express · MongoDB · JWT · Axios</div>
-<div class="project-links"><a href="https://github.com/pranith-kumar7/Blogapp" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://blogapp-zeta-eight.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-</article>
-<article class="project-card">
-<h3>Deepfake Detection System</h3>
-<p>Full-stack media verification application supporting deepfake prediction for uploaded images and videos.</p>
-<ul><li>Connected a React interface to Flask prediction endpoints for image and video workflows.</li><li>Added signup/signin API routes, MongoDB-backed user storage, and model/API health-check endpoints.</li></ul>
-<div class="project-stack">Python · Flask · React · Bootstrap · Axios · MongoDB · PyMongo · PyTorch/TensorFlow</div>
-<div class="project-links"><a href="https://github.com/pranith-kumar7/DeepfakeDetection" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://pranith-deepfake-detection.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-</article>
-<article class="project-card">
-<h3>Python SQL Database Engine</h3>
-<p>Custom in-memory database engine built to explore SQL-like query processing and core database operations.</p>
-<ul><li>Implemented database/table abstractions and tokenization for SQL command input.</li><li>Supported CREATE, INSERT, SELECT, UPDATE, and DELETE operations with primary-key, unique, not-null, and basic type validation.</li></ul>
-<div class="project-stack">Python · SQL · Object-Oriented Programming · Tokenization · Query Parsing · Data Validation</div>
-<div class="project-links"><a href="https://github.com/pranith-kumar7/python-sql-database-engine" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a></div>
-</article>
-</div></div></section>
-<hr class="m-0"/>
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About Me</h2>
+      <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-user" aria-hidden="true"></i></div><div class="divider-custom-line"></div></div>
+      <div class="row">
+        <div class="col-lg-4 ms-auto"><p class="lead about-copy">I'm a Computer Science and Engineering (Data Science) graduate from VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad. My hands-on project work covers full-stack JavaScript development, REST APIs, database integration, and AI-powered image analysis.</p></div>
+        <div class="col-lg-4 me-auto"><p class="lead about-copy">I enjoy working through the complete flow of an application — from frontend requests and backend logic to data storage, model inference, and debugging. I'm looking for an entry-level software engineering role where I can contribute, learn from teammates, and build maintainable software.</p></div>
+      </div>
+      <div class="text-center mt-4">
+        <a class="btn btn-primary btn-xl" href="https://github.com/pranith-kumar7" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-2" aria-hidden="true"></i>Explore My GitHub</a>
+      </div>
+    </div>
+  </section>
 
-<section class="resume-section" id="education"><div class="resume-section-content">
-<h2 class="mb-4">Education</h2>
-<div class="education-item d-flex flex-column flex-md-row justify-content-between">
-<div class="flex-grow-1"><h3 class="mb-0">VNR Vignana Jyothi Institute of Engineering and Technology</h3><div class="subheading mb-2">B.Tech — Computer Science and Engineering (Data Science)</div><div>Hyderabad, Telangana</div><p class="education-meta mb-0">CGPA: 8.58/10</p></div><div class="flex-shrink-0"><span class="education-meta">2023–2026</span></div>
-</div>
-<div class="education-item d-flex flex-column flex-md-row justify-content-between">
-<div class="flex-grow-1"><h3 class="mb-0">Government Polytechnic, Masab Tank</h3><div class="subheading mb-2">Diploma — Computer Science and Engineering</div><div>Hyderabad, Telangana</div><p class="education-meta mb-0">CGPA: 9.04/10</p></div><div class="flex-shrink-0"><span class="education-meta">2020–2023</span></div>
-</div>
-</div></section>
-<hr class="m-0"/>
+  <!-- Skills -->
+  <section class="page-section bg-light" id="skills">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Technical Skills</h2>
+      <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div><div class="divider-custom-line"></div></div>
+      <p class="section-note">Technologies and fundamentals used in my projects or covered in my technical preparation.</p>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4"><div class="skill-panel"><h3><i class="fas fa-terminal me-2" aria-hidden="true"></i>Programming</h3><p>Python · JavaScript · C++ · SQL</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="skill-panel"><h3><i class="fas fa-desktop me-2" aria-hidden="true"></i>Frontend</h3><p>React.js · HTML5 · CSS3 · Bootstrap</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="skill-panel"><h3><i class="fas fa-server me-2" aria-hidden="true"></i>Backend &amp; APIs</h3><p>Node.js · Express.js · Flask · REST APIs · HTTP/HTTPS · JSON · CRUD</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="skill-panel"><h3><i class="fas fa-database me-2" aria-hidden="true"></i>Databases</h3><p>MongoDB · MySQL · SQL Queries · Database Integration</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="skill-panel"><h3><i class="fas fa-brain me-2" aria-hidden="true"></i>AI &amp; Machine Learning</h3><p>OpenAI API · TensorFlow/Keras · DenseNet121 · OpenCV · Image Preprocessing · Model Inference</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="skill-panel"><h3><i class="fas fa-screwdriver-wrench me-2" aria-hidden="true"></i>Tools &amp; Fundamentals</h3><p>Git · GitHub · Postman · Linux/WSL · Socket.IO · Multer · DSA · OOP · Debugging</p></div></div>
+      </div>
+    </div>
+  </section>
 
-<section class="resume-section" id="skills"><div class="resume-section-content">
-<h2 class="mb-4">Technical Skills</h2>
-<div class="skill-block"><strong>Programming Languages</strong><p>Python, JavaScript, C++, SQL</p></div>
-<div class="skill-block"><strong>Frontend Development</strong><p>React.js, HTML5, CSS3, Bootstrap</p></div>
-<div class="skill-block"><strong>Backend &amp; APIs</strong><p>Node.js, Express.js, Flask, REST APIs, HTTP/HTTPS, JSON, CRUD operations, request validation, error handling</p></div>
-<div class="skill-block"><strong>Databases</strong><p>MongoDB, MongoDB Atlas, MySQL, SQL queries, database integration and data validation</p></div>
-<div class="skill-block"><strong>AI &amp; Machine Learning</strong><p>OpenAI API, OpenRouter API, TensorFlow/Keras, DenseNet121, OpenCV, image preprocessing, model inference</p></div>
-<div class="skill-block"><strong>Tools &amp; Software Engineering</strong><p>Git, GitHub, Postman, Linux/WSL, Socket.IO, Multer, data structures and algorithms, object-oriented programming, debugging and troubleshooting</p></div>
-</div></section>
-<hr class="m-0"/>
+  <!-- Projects -->
+  <section class="page-section portfolio" id="projects">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Selected Projects</h2>
+      <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-code-branch" aria-hidden="true"></i></div><div class="divider-custom-line"></div></div>
+      <p class="section-note">A selection of full-stack and AI projects. Explore each repository for implementation details.</p>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>AI Job Tracker</h3>
+              <p>A full-stack job application management platform with status tracking and AI-assisted job-search workflows.</p>
+              <ul>
+                <li>Built application records, status management, search, and filtering.</li>
+                <li>Integrated OpenAI API features into job-search workflows.</li>
+                <li>Debugged authentication, API requests, and frontend-backend database interactions.</li>
+              </ul>
+              <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">OpenAI API</span></div>
+              <div class="project-actions"><a href="https://github.com/pranith-kumar7/Ai-Job-Tracker" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><a href="https://ai-job-tracker-smoky.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-magnifying-glass-location" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Campus Connect</h3>
+              <p>A campus lost-and-found platform for reporting items and supporting item-recovery workflows.</p>
+              <ul>
+                <li>Developed database-backed item records and CRUD workflows.</li>
+                <li>Integrated Socket.IO for real-time communication between users.</li>
+                <li>Implemented file uploads and troubleshot API and frontend-backend integration.</li>
+              </ul>
+              <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Socket.IO</span><span class="tech-tag">Multer</span></div>
+              <div class="project-actions"><a href="https://github.com/pranith-kumar7/campus-lost-found" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><a href="https://campus-lost-found-theta-wheat.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-lungs" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>PulmoScan</h3>
+              <p>An AI-powered chest X-ray decision-support application that presents predictions generated by a deep-learning model.</p>
+              <ul>
+                <li>Used DenseNet121 with TensorFlow/Keras for pulmonary image classification.</li>
+                <li>Built image preprocessing and inference workflows with OpenCV.</li>
+                <li>Connected X-ray submissions and model results through Flask REST APIs and React.</li>
+              </ul>
+              <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">React.js</span><span class="tech-tag">TensorFlow/Keras</span><span class="tech-tag">DenseNet121</span><span class="tech-tag">OpenCV</span></div>
+              <div class="project-actions"><a href="https://github.com/pranith-kumar7/pulomonary-AI-care-system" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><a href="https://pulomonary-ai-care-system.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+        </div>
 
-<section class="resume-section" id="credentials"><div class="resume-section-content">
-<h2 class="mb-4">Certifications</h2>
-<ul class="cert-list fa-ul mb-0">
-<li><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span><strong>AWS Cloud Practitioner Essentials</strong> — AWS Training and Certification, July 2026. <a href="https://drive.google.com/file/d/1GxzmBWeLOP-0shfrlqYfJAkeNrACzBGu/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificate ↗</a></li>
-<li><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span><strong>SQL and Relational Databases</strong> — IBM Cognitive Class. <a href="https://drive.google.com/file/d/11o7ry2gbQ59yo_xm3VejVkxdA1QkFzio/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificate ↗</a></li>
-<li><span class="fa-li"><i class="fas fa-certificate text-primary"></i></span><strong>Core Java, Python and Data Science Training</strong> — NSIC Technical Services Centre, May 2023. <a href="https://drive.google.com/file/d/1xzx0t4y4u6BXbdQBooOi0s340tTHQK9e/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificate ↗</a></li>
-</ul>
-</div></section>
-<hr class="m-0"/>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-pen-nib" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>BlogApp — Full-Stack Blogging Platform</h3>
+              <p>A role-based blogging platform where readers browse and comment on articles while authors manage their posts.</p>
+              <ul>
+                <li>Implemented user and author sign-up/login with JWT-protected workflows.</li>
+                <li>Built article publishing, editing, soft deletion, restoration, and commenting.</li>
+                <li>Organized Express API routes and MongoDB persistence for users, articles, and comments.</li>
+              </ul>
+              <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Redux Toolkit</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express</span><span class="tech-tag">MongoDB</span><span class="tech-tag">JWT</span><span class="tech-tag">Bootstrap</span></div>
+              <div class="project-actions"><a href="https://github.com/pranith-kumar7/Blogapp" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><a href="https://blogapp-zeta-eight.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Deepfake Detection System</h3>
+              <p>A full-stack media-verification application that returns deepfake predictions for uploaded images and videos.</p>
+              <ul>
+                <li>Connected a React interface to Flask prediction endpoints for image and video workflows.</li>
+                <li>Added sign-up/sign-in APIs and MongoDB-backed user storage.</li>
+                <li>Included API/model health-check endpoints for monitoring service readiness.</li>
+              </ul>
+              <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">React</span><span class="tech-tag">MongoDB</span><span class="tech-tag">PyMongo</span><span class="tech-tag">PyTorch/TensorFlow</span><span class="tech-tag">OpenCV</span></div>
+              <div class="project-actions"><a href="https://github.com/pranith-kumar7/DeepfakeDetection" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><a href="https://pranith-deepfake-detection.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Python SQL Database Engine</h3>
+              <p>A custom in-memory database engine built to explore SQL-like query processing and core table operations.</p>
+              <ul>
+                <li>Implemented database and table abstractions with SQL input tokenization.</li>
+                <li>Supported CREATE, INSERT, SELECT, UPDATE, and DELETE commands.</li>
+                <li>Added primary-key, unique, not-null, and basic type-constraint validation.</li>
+              </ul>
+              <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">SQL</span><span class="tech-tag">OOP</span><span class="tech-tag">Tokenization</span><span class="tech-tag">Query Parsing</span><span class="tech-tag">Data Validation</span></div>
+              <div class="project-actions"><a href="https://github.com/pranith-kumar7/python-sql-database-engine" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="resume-section" id="achievements"><div class="resume-section-content">
-<h2 class="mb-4">Achievements &amp; Research</h2>
-<ul class="cert-list fa-ul mb-0">
-<li><span class="fa-li"><i class="fas fa-trophy text-primary"></i></span><strong>TCS CodeVita Season 13:</strong> Global Rank 5714 in a competitive programming contest.</li>
-<li><span class="fa-li"><i class="fas fa-trophy text-primary"></i></span><strong>NPTEL IoT 2024:</strong> Top 5 national rank, as listed in my achievements.</li>
-<li><span class="fa-li"><i class="fas fa-book-open text-primary"></i></span><strong>Research publication:</strong> Co-authored work on explainable multi-class pulmonary disease detection using DenseNet121 and Grad-CAM, associated with ICDCA 2026 and IEEE Xplore.</li>
-</ul>
-</div></section>
-<hr class="m-0"/>
+  <!-- Education and credentials -->
+  <section class="page-section bg-light" id="education">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Education</h2>
+      <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div><div class="divider-custom-line"></div></div>
+      <div class="row g-4">
+        <div class="col-lg-6"><article class="education-panel"><h3>B.Tech in Computer Science and Engineering (Data Science)</h3><p class="subline">VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad</p><p class="result">CGPA: 8.58/10</p><p class="text-muted mb-0 mt-2">2023–2026</p></article></div>
+        <div class="col-lg-6"><article class="education-panel"><h3>Diploma in Computer Science and Engineering</h3><p class="subline">Government Polytechnic, Masab Tank, Hyderabad</p><p class="result">CGPA: 9.04/10</p><p class="text-muted mb-0 mt-2">2020–2023</p></article></div>
+      </div>
+    </div>
+  </section>
 
-<section class="resume-section" id="contact"><div class="resume-section-content">
-<h2 class="mb-2">Contact</h2><p class="lead mb-4">I'm interested in entry-level software engineering opportunities and teams building useful, reliable software.</p>
-<p><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:pranith.kumar0110@gmail.com">pranith.kumar0110@gmail.com</a></p>
-<p><i class="fas fa-phone text-primary me-2"></i><a href="tel:+918247260575">+91 82472 60575</a></p>
-<p><i class="fas fa-location-dot text-primary me-2"></i>Hyderabad, India</p>
-<div class="social-icons mt-4">
-<a class="social-icon" href="https://linkedin.com/in/pranith-kumar-golimela" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-<a class="social-icon" href="https://github.com/pranith-kumar7" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-<a class="social-icon" href="https://pranith-kumar7.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio website"><i class="fas fa-globe"></i></a>
-</div>
-</div></section>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/StartBootstrap/startbootstrap-resume@master/dist/js/scripts.js"></script>
+  <section class="page-section" id="credentials">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Certifications &amp; Achievements</h2>
+      <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-award" aria-hidden="true"></i></div><div class="divider-custom-line"></div></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4"><article class="credential-panel"><i class="fa-solid fa-cloud" aria-hidden="true"></i><h3>AWS Cloud Practitioner Essentials</h3><p class="subline">AWS Training and Certification · July 2026</p><a href="https://drive.google.com/file/d/1GxzmBWeLOP-0shfrlqYfJAkeNrACzBGu/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate ↗</a></article></div>
+        <div class="col-md-6 col-lg-4"><article class="credential-panel"><i class="fa-solid fa-database" aria-hidden="true"></i><h3>SQL and Relational Databases</h3><p class="subline">IBM Cognitive Class</p><a href="https://drive.google.com/file/d/11o7ry2gbQ59yo_xm3VejVkxdA1QkFzio/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate ↗</a></article></div>
+        <div class="col-md-6 col-lg-4"><article class="credential-panel"><i class="fa-solid fa-code" aria-hidden="true"></i><h3>TCS CodeVita Season 13</h3><p class="subline">Global Rank 5714 in a competitive programming contest.</p><a href="https://drive.google.com/file/d/1b3Uqr0BZeeQWYodr2yTMNd3oLeZhrxxF/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate ↗</a></article></div>
+        <div class="col-md-6 col-lg-4"><article class="credential-panel"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><h3>Core Java, Python and Data Science Training</h3><p class="subline">NSIC Technical Services Centre · May 2023</p><a href="https://drive.google.com/file/d/1xzx0t4y4u6BXbdQBooOi0s340tTHQK9e/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate ↗</a></article></div>
+        <div class="col-md-6 col-lg-4"><article class="credential-panel"><i class="fa-solid fa-book-open" aria-hidden="true"></i><h3>Research Publication</h3><p class="subline">Co-authored research on explainable multi-class pulmonary disease detection using DenseNet121 and Grad-CAM, associated with ICDCA 2026 and IEEE Xplore.</p></article></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="page-section bg-primary text-white mb-0" id="contact">
+    <div class="container text-center">
+      <h2 class="page-section-heading text-center text-uppercase text-white">Get In Touch</h2>
+      <div class="divider-custom divider-light"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div><div class="divider-custom-line"></div></div>
+      <p class="lead mb-4">I'm open to entry-level software engineering opportunities and conversations about building useful software.</p>
+      <div class="d-flex justify-content-center flex-wrap gap-3 contact-details">
+        <a class="btn btn-outline-light btn-lg" href="mailto:pranith.kumar0110@gmail.com"><i class="fas fa-envelope me-2" aria-hidden="true"></i>Email Me</a>
+        <a class="btn btn-outline-light btn-lg" href="https://linkedin.com/in/pranith-kumar-golimela" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin me-2" aria-hidden="true"></i>LinkedIn</a>
+        <a class="btn btn-outline-light btn-lg" href="https://github.com/pranith-kumar7" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-2" aria-hidden="true"></i>GitHub</a>
+        <a class="btn btn-outline-light btn-lg" href="tel:+918247260575"><i class="fas fa-phone me-2" aria-hidden="true"></i>Call</a>
+      </div>
+      <p class="mt-4 mb-0">Hyderabad, India</p>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0"><h4 class="text-uppercase mb-3">Connect</h4><a class="social-button" href="https://github.com/pranith-kumar7" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a><a class="social-button" href="https://linkedin.com/in/pranith-kumar-golimela" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a><a class="social-button" href="mailto:pranith.kumar0110@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a></div>
+        <div class="col-md-6"><h4 class="text-uppercase mb-3">About This Site</h4><p class="mb-0">Personal portfolio based on <a class="text-white" href="https://startbootstrap.com/theme/freelancer" target="_blank" rel="noopener noreferrer">Start Bootstrap Freelancer</a>, a free MIT-licensed theme.</p></div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright py-4 text-center text-white"><div class="container"><small>Copyright &copy; Pranith Kumar Golimela 2026</small></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/StartBootstrap/startbootstrap-freelancer@master/dist/js/scripts.js"></script>
 </body>
 </html>
